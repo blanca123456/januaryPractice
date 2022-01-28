@@ -45,11 +45,12 @@ void draw() {
     case("ASK"):
 
     answer= booster2.showTextInputDialog("Vill du spela en gång till?");
-
+    println(answer);
     if (answer == "ja") {
      gameState = "PLAY";
+     println("PLAY");
     } 
-    //else {    exit(); }
+    else {exit(); }
 
     break;
   }
